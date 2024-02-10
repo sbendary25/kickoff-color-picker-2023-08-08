@@ -1,0 +1,41 @@
+.palette {
+  width: 66%;
+  min-width: 300px;
+  max-width: 700px;
+  border: 0.5px solid lightslategray;
+  border-top-right-radius: 30%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  grid-area: 4 / 1 / 8 / 3;
+}
+
+.history {
+  border-bottom-right-radius: 30%;
+  height: 300px;
+  margin-bottom: 10px;
+  width: 50%;
+  transition: transform 0.1s ease;
+}
+
+.history:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .palette {
+    grid-area: 3 / 1 / 8 / 3;
+  }
+  .history {
+    margin-bottom: 20px;
+    width: 25%;
+    height: 200px;
+  }
+}
+
+@media (max-width: 767px) {
+  .inactive {
+    display: none;
+  }
+}

@@ -1,0 +1,34 @@
+.color {
+  flex-grow: 1;
+  height: 25px;
+}
+
+.text {
+  position: relative;
+  top: 0;
+  left: 10px;
+  margin-bottom: 0px;
+}
+
+.activePalette {
+}
+
+.selected {
+  border: 3px solid black;
+  z-index: 100;
+}
+
+.color,
+.selected {
+  transition: border 0.1s ease-in-out;
+}
+
+@media (min-width: 768px) {
+  .rgbControls {
+    grid-area: 1 / 1 / 3 / 3;
+  }
+
+  .activePalette:not(.selected):hover {
+    border: 1.5px solid black;
+  }
+}

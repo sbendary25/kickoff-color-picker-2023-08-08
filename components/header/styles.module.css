@@ -1,0 +1,17 @@
+.header {
+  display: flex;
+  width: 300px;
+  justify-content: space-around;
+  /* grid-area: 1 / 1 / 2 / 4; */
+  grid-area: 1 / 1 / 2 / 3;
+}
+
+.inactive {
+  opacity: 50%;
+}
+
+@media (min-width: 768px) {
+  .header {
+    display: none;
+  }
+}

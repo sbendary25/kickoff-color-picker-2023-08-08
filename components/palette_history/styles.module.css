@@ -1,0 +1,23 @@
+.parent {
+  overflow-y: scroll;
+  height: 100%;
+  transform: scaleX(-1);
+  grid-area: 2 / 1 / 8 / 4;
+}
+
+@media (min-width: 768px) {
+  .parent {
+    grid-area: 1 / 3 / 8 / 4;
+    overflow-y: scroll;
+  }
+}
+
+@media (max-width: 767px) {
+  .inactive {
+    display: none;
+  }
+
+  .active {
+    display: block;
+  }
+}
