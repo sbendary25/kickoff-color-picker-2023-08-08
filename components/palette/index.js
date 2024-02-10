@@ -61,7 +61,7 @@ const Palette = ({
               activePalette={activePalette}
               selected={key === edit}
               rgb={values}
-              onClick={() => onColorClick(key)}
+              editColor={() => onColorClick(key)}
             />
           );
         }
